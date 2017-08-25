@@ -8,6 +8,12 @@ I'm going to be using this for a couple different projects in the future, so thi
 
 If you want to help improve it, by all means feel free to tackle the 25,000 generated lines, I'm not going to stop you. I have a couple of tools to automatically traverse the library and add superficial features into the classes - if there's something simple you think should be added, go ahead and open an issue and we'll see if it can be done!
 
+One interesting thing to do would be to try to automatically document the code and generate some docs. Properties are all prefaced by:
+
+```c#
+/// <remarks/>
+```
+
 # License
 
 Public domain! w00t!
