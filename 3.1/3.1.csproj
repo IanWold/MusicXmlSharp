@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC7EEC29-333F-4F76-8F43-370318EE44D9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MusicXml</RootNamespace>
+    <AssemblyName>3.1</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="abovebelow.cs" />
+    <Compile Include="accidental.cs" />
+    <Compile Include="accidentalmark.cs" />
+    <Compile Include="accidentaltext.cs" />
+    <Compile Include="accidentalvalue.cs" />
+    <Compile Include="accord.cs" />
+    <Compile Include="accordionregistration.cs" />
+    <Compile Include="appearance.cs" />
+    <Compile Include="arpeggiate.cs" />
+    <Compile Include="arrow.cs" />
+    <Compile Include="arrowdirection.cs" />
+    <Compile Include="arrowstyle.cs" />
+    <Compile Include="articulations.cs" />
+    <Compile Include="attributes.cs" />
+    <Compile Include="attributesDirective.cs" />
+    <Compile Include="backup.cs" />
+    <Compile Include="backwardforward.cs" />
+    <Compile Include="barline.cs" />
+    <Compile Include="barre.cs" />
+    <Compile Include="barstyle.cs" />
+    <Compile Include="barstylecolor.cs" />
+    <Compile Include="bass.cs" />
+    <Compile Include="bassalter.cs" />
+    <Compile Include="bassstep.cs" />
+    <Compile Include="beam.cs" />
+    <Compile Include="beamvalue.cs" />
+    <Compile Include="beater.cs" />
+    <Compile Include="beatervalue.cs" />
+    <Compile Include="beatrepeat.cs" />
+    <Compile Include="beatunittied.cs" />
+    <Compile Include="bend.cs" />
+    <Compile Include="bookmark.cs" />
+    <Compile Include="bracket.cs" />
+    <Compile Include="breathmark.cs" />
+    <Compile Include="breathmarkvalue.cs" />
+    <Compile Include="caesura.cs" />
+    <Compile Include="caesuravalue.cs" />
+    <Compile Include="cancel.cs" />
+    <Compile Include="cancellocation.cs" />
+    <Compile Include="circulararrow.cs" />
+    <Compile Include="clef.cs" />
+    <Compile Include="clefsign.cs" />
+    <Compile Include="coda.cs" />
+    <Compile Include="credit.cs" />
+    <Compile Include="dashes.cs" />
+    <Compile Include="defaults.cs" />
+    <Compile Include="degree.cs" />
+    <Compile Include="degreealter.cs" />
+    <Compile Include="degreesymbolvalue.cs" />
+    <Compile Include="degreetype.cs" />
+    <Compile Include="degreetypevalue.cs" />
+    <Compile Include="degreevalue.cs" />
+    <Compile Include="direction.cs" />
+    <Compile Include="directiontype.cs" />
+    <Compile Include="distance.cs" />
+    <Compile Include="dynamics.cs" />
+    <Compile Include="effect.cs" />
+    <Compile Include="elision.cs" />
+    <Compile Include="empty.cs" />
+    <Compile Include="emptyfont.cs" />
+    <Compile Include="emptyline.cs" />
+    <Compile Include="emptyplacement.cs" />
+    <Compile Include="emptyplacementsmufl.cs" />
+    <Compile Include="emptyprintobjectstylealign.cs" />
+    <Compile Include="emptyprintstylealignid.cs" />
+    <Compile Include="emptytrillsound.cs" />
+    <Compile Include="enclosureshape.cs" />
+    <Compile Include="encoding.cs" />
+    <Compile Include="ending.cs" />
+    <Compile Include="extend.cs" />
+    <Compile Include="fan.cs" />
+    <Compile Include="feature.cs" />
+    <Compile Include="fermata.cs" />
+    <Compile Include="fermatashape.cs" />
+    <Compile Include="figure.cs" />
+    <Compile Include="figuredbass.cs" />
+    <Compile Include="fingering.cs" />
+    <Compile Include="firstfret.cs" />
+    <Compile Include="fontstyle.cs" />
+    <Compile Include="fontweight.cs" />
+    <Compile Include="formattedsymbolid.cs" />
+    <Compile Include="formattedtext.cs" />
+    <Compile Include="formattedtextid.cs" />
+    <Compile Include="forward.cs" />
+    <Compile Include="frame.cs" />
+    <Compile Include="framenote.cs" />
+    <Compile Include="fret.cs" />
+    <Compile Include="glass.cs" />
+    <Compile Include="glassvalue.cs" />
+    <Compile Include="glissando.cs" />
+    <Compile Include="glyph.cs" />
+    <Compile Include="grace.cs" />
+    <Compile Include="groupbarline.cs" />
+    <Compile Include="groupbarlinevalue.cs" />
+    <Compile Include="grouping.cs" />
+    <Compile Include="groupname.cs" />
+    <Compile Include="groupsymbol.cs" />
+    <Compile Include="groupsymbolvalue.cs" />
+    <Compile Include="hammeronpulloff.cs" />
+    <Compile Include="handbell.cs" />
+    <Compile Include="handbellvalue.cs" />
+    <Compile Include="harmonclosed.cs" />
+    <Compile Include="harmonclosedlocation.cs" />
+    <Compile Include="harmonclosedvalue.cs" />
+    <Compile Include="harmonic.cs" />
+    <Compile Include="harmonmute.cs" />
+    <Compile Include="harmony.cs" />
+    <Compile Include="harmonytype.cs" />
+    <Compile Include="harppedals.cs" />
+    <Compile Include="heeltoe.cs" />
+    <Compile Include="hole.cs" />
+    <Compile Include="holeclosed.cs" />
+    <Compile Include="holeclosedlocation.cs" />
+    <Compile Include="holeclosedvalue.cs" />
+    <Compile Include="horizontalturn.cs" />
+    <Compile Include="identification.cs" />
+    <Compile Include="image.cs" />
+    <Compile Include="instrument.cs" />
+    <Compile Include="interchangeable.cs" />
+    <Compile Include="inversion.cs" />
+    <Compile Include="Item1ChoiceType.cs" />
+    <Compile Include="ItemChoiceType.cs" />
+    <Compile Include="ItemChoiceType1.cs" />
+    <Compile Include="ItemsChoiceType.cs" />
+    <Compile Include="ItemsChoiceType1.cs" />
+    <Compile Include="ItemsChoiceType10.cs" />
+    <Compile Include="ItemsChoiceType2.cs" />
+    <Compile Include="ItemsChoiceType3.cs" />
+    <Compile Include="ItemsChoiceType4.cs" />
+    <Compile Include="ItemsChoiceType5.cs" />
+    <Compile Include="ItemsChoiceType6.cs" />
+    <Compile Include="ItemsChoiceType7.cs" />
+    <Compile Include="ItemsChoiceType8.cs" />
+    <Compile Include="ItemsChoiceType9.cs" />
+    <Compile Include="key.cs" />
+    <Compile Include="keyaccidental.cs" />
+    <Compile Include="keyoctave.cs" />
+    <Compile Include="kind.cs" />
+    <Compile Include="kindvalue.cs" />
+    <Compile Include="leftcenterright.cs" />
+    <Compile Include="leftright.cs" />
+    <Compile Include="level.cs" />
+    <Compile Include="lineend.cs" />
+    <Compile Include="linelength.cs" />
+    <Compile Include="lineshape.cs" />
+    <Compile Include="linetype.cs" />
+    <Compile Include="linewidth.cs" />
+    <Compile Include="link.cs" />
+    <Compile Include="lyric.cs" />
+    <Compile Include="lyricfont.cs" />
+    <Compile Include="lyriclanguage.cs" />
+    <Compile Include="margintype.cs" />
+    <Compile Include="measurelayout.cs" />
+    <Compile Include="measurenumbering.cs" />
+    <Compile Include="measurenumberingvalue.cs" />
+    <Compile Include="measurerepeat.cs" />
+    <Compile Include="measurestyle.cs" />
+    <Compile Include="membrane.cs" />
+    <Compile Include="metal.cs" />
+    <Compile Include="metronome.cs" />
+    <Compile Include="metronomebeam.cs" />
+    <Compile Include="metronomenote.cs" />
+    <Compile Include="metronometied.cs" />
+    <Compile Include="metronometuplet.cs" />
+    <Compile Include="mididevice.cs" />
+    <Compile Include="midiinstrument.cs" />
+    <Compile Include="miscellaneousfield.cs" />
+    <Compile Include="mordent.cs" />
+    <Compile Include="multiplerest.cs" />
+    <Compile Include="mute.cs" />
+    <Compile Include="namedisplay.cs" />
+    <Compile Include="nonarpeggiate.cs" />
+    <Compile Include="notations.cs" />
+    <Compile Include="note.cs" />
+    <Compile Include="notehead.cs" />
+    <Compile Include="noteheadtext.cs" />
+    <Compile Include="noteheadvalue.cs" />
+    <Compile Include="notesize.cs" />
+    <Compile Include="notesizetype.cs" />
+    <Compile Include="notetype.cs" />
+    <Compile Include="notetypevalue.cs" />
+    <Compile Include="octaveshift.cs" />
+    <Compile Include="offset.cs" />
+    <Compile Include="onoff.cs" />
+    <Compile Include="opus.cs" />
+    <Compile Include="opusActuate.cs" />
+    <Compile Include="opusShow.cs" />
+    <Compile Include="opusType.cs" />
+    <Compile Include="ornaments.cs" />
+    <Compile Include="otherappearance.cs" />
+    <Compile Include="otherdirection.cs" />
+    <Compile Include="othernotation.cs" />
+    <Compile Include="otherplacementtext.cs" />
+    <Compile Include="otherplay.cs" />
+    <Compile Include="othertext.cs" />
+    <Compile Include="overunder.cs" />
+    <Compile Include="pagelayout.cs" />
+    <Compile Include="pagemargins.cs" />
+    <Compile Include="partgroup.cs" />
+    <Compile Include="partlist.cs" />
+    <Compile Include="partname.cs" />
+    <Compile Include="partsymbol.cs" />
+    <Compile Include="pedal.cs" />
+    <Compile Include="pedaltuning.cs" />
+    <Compile Include="pedaltype.cs" />
+    <Compile Include="percussion.cs" />
+    <Compile Include="perminute.cs" />
+    <Compile Include="pitch.cs" />
+    <Compile Include="pitched.cs" />
+    <Compile Include="pitchedvalue.cs" />
+    <Compile Include="placementtext.cs" />
+    <Compile Include="play.cs" />
+    <Compile Include="principalvoice.cs" />
+    <Compile Include="principalvoicesymbol.cs" />
+    <Compile Include="print.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="repeat.cs" />
+    <Compile Include="rest.cs" />
+    <Compile Include="rightleftmiddle.cs" />
+    <Compile Include="root.cs" />
+    <Compile Include="rootalter.cs" />
+    <Compile Include="rootstep.cs" />
+    <Compile Include="scaling.cs" />
+    <Compile Include="scordatura.cs" />
+    <Compile Include="scoreinstrument.cs" />
+    <Compile Include="scorepart.cs" />
+    <Compile Include="scorepartwise.cs" />
+    <Compile Include="scorepartwisePart.cs" />
+    <Compile Include="scorepartwisePartMeasure.cs" />
+    <Compile Include="scoretimewise.cs" />
+    <Compile Include="scoretimewiseMeasure.cs" />
+    <Compile Include="scoretimewiseMeasurePart.cs" />
+    <Compile Include="segno.cs" />
+    <Compile Include="semipitched.cs" />
+    <Compile Include="showfrets.cs" />
+    <Compile Include="showtuplet.cs" />
+    <Compile Include="slash.cs" />
+    <Compile Include="slide.cs" />
+    <Compile Include="slur.cs" />
+    <Compile Include="sound.cs" />
+    <Compile Include="staffdetails.cs" />
+    <Compile Include="staffdivide.cs" />
+    <Compile Include="staffdividesymbol.cs" />
+    <Compile Include="stafflayout.cs" />
+    <Compile Include="stafftuning.cs" />
+    <Compile Include="stafftype.cs" />
+    <Compile Include="startnote.cs" />
+    <Compile Include="startstop.cs" />
+    <Compile Include="startstopcontinue.cs" />
+    <Compile Include="startstopdiscontinue.cs" />
+    <Compile Include="startstopsingle.cs" />
+    <Compile Include="stem.cs" />
+    <Compile Include="stemvalue.cs" />
+    <Compile Include="step.cs" />
+    <Compile Include="stick.cs" />
+    <Compile Include="sticklocation.cs" />
+    <Compile Include="stickmaterial.cs" />
+    <Compile Include="sticktype.cs" />
+    <Compile Include="string.cs" />
+    <Compile Include="stringmute.cs" />
+    <Compile Include="strongaccent.cs" />
+    <Compile Include="styletext.cs" />
+    <Compile Include="supports.cs" />
+    <Compile Include="syllabic.cs" />
+    <Compile Include="symbolsize.cs" />
+    <Compile Include="systemdividers.cs" />
+    <Compile Include="systemlayout.cs" />
+    <Compile Include="systemmargins.cs" />
+    <Compile Include="tap.cs" />
+    <Compile Include="taphand.cs" />
+    <Compile Include="technical.cs" />
+    <Compile Include="textdirection.cs" />
+    <Compile Include="textelementdata.cs" />
+    <Compile Include="tie.cs" />
+    <Compile Include="tied.cs" />
+    <Compile Include="tiedtype.cs" />
+    <Compile Include="time.cs" />
+    <Compile Include="timemodification.cs" />
+    <Compile Include="timerelation.cs" />
+    <Compile Include="timeseparator.cs" />
+    <Compile Include="timesymbol.cs" />
+    <Compile Include="tipdirection.cs" />
+    <Compile Include="topbottom.cs" />
+    <Compile Include="transpose.cs" />
+    <Compile Include="tremolo.cs" />
+    <Compile Include="tremolotype.cs" />
+    <Compile Include="trillstep.cs" />
+    <Compile Include="tuplet.cs" />
+    <Compile Include="tupletdot.cs" />
+    <Compile Include="tupletnumber.cs" />
+    <Compile Include="tupletportion.cs" />
+    <Compile Include="tuplettype.cs" />
+    <Compile Include="twonoteturn.cs" />
+    <Compile Include="typedtext.cs" />
+    <Compile Include="unpitched.cs" />
+    <Compile Include="updown.cs" />
+    <Compile Include="updownstopcontinue.cs" />
+    <Compile Include="uprightinverted.cs" />
+    <Compile Include="valign.cs" />
+    <Compile Include="valignimage.cs" />
+    <Compile Include="virtualinstrument.cs" />
+    <Compile Include="wavyline.cs" />
+    <Compile Include="wedge.cs" />
+    <Compile Include="wedgetype.cs" />
+    <Compile Include="winged.cs" />
+    <Compile Include="wood.cs" />
+    <Compile Include="work.cs" />
+    <Compile Include="yesno.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

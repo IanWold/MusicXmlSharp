@@ -1,6 +1,8 @@
 # MusicXmlSharp
 
-I took the MusicXML XSD files and ran them through xsd.exe. I sorted the library out into separate class files, and they're all annotated with everything you need to do the fancy autoparsing from XML into the library. Some of the classes even seemt to implement `INotifyPropertyChanged`, so you can probably databind right out of the bat.
+I took the MusicXML XSD files and ran them through xsd.exe. I sorted the library out into separate class files, and they're all annotated with everything you need to do the fancy autoparsing from XML into the library. The classes implement `INotifyPropertyChanged`, so you can databind right out of the bat.
+
+MusicXML verions 2.0, 3.0, and 3.1 are all included.
 
 ## Development
 
