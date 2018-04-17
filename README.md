@@ -2,7 +2,7 @@
 
 I took the MusicXML XSD files and ran them through xsd.exe. I sorted the library out into separate class files, and they're all annotated with everything you need to do the fancy autoparsing from XML into the library. The classes implement `INotifyPropertyChanged`, so you can databind right out of the bat.
 
-MusicXML verions 2.0, 3.0, and 3.1 are all included.
+MusicXML versions 2.0, 3.0, and 3.1 are all included.
 
 Deserialize XML files with [XmlSerializer.Deserialize](https://msdn.microsoft.com/en-us/library/tz8csy73(v=vs.110).aspx)
 
