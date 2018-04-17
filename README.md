@@ -4,6 +4,10 @@ I took the MusicXML XSD files and ran them through xsd.exe. I sorted the library
 
 MusicXML verions 2.0, 3.0, and 3.1 are all included.
 
+Deserialize XML files with [XmlSerializer.Deserialize](https://msdn.microsoft.com/en-us/library/tz8csy73(v=vs.110).aspx)
+
+MXL files are MusicXML files compressed as ZIP files ([see here](https://www.musicxml.com/tutorial/compressed-mxl-files/compressed-file-format/)). To read these, use [ZipFile.OpenRead](https://msdn.microsoft.com/en-us/library/system.io.compression.zipfile.openread(v=vs.110).aspx) before deserializing.
+
 ## Development
 
 I'm going to be using this for a couple different projects in the future, so this repo is going to act as a place to fork from; I'm not doing any real development here. Feel free to fork it yourself!
