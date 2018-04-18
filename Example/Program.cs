@@ -42,7 +42,7 @@ namespace Example
                 }
                 else
                 {
-                    WriteLine("Could not find entity.");
+                    WriteLine("Could not find entry.");
                 }
             }
 
